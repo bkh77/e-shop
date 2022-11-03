@@ -1,13 +1,17 @@
 import NavBar from './components/NavBar.jsx'
+import SideBar from './components/SideBar/index.jsx'
 import { IconContext } from 'react-icons'
+
 function App() {
   return (
-    <div className='App'>
-      <IconContext.Provider value={{ className: 'react-icons' }}>
+    <IconContext.Provider value={{ className: 'react-icons' }}>
+      <main className='font-body tracking-wide'>
         <NavBar />
-      </IconContext.Provider>
-      ;
-    </div>
+        <section className='flex'>
+          <SideBar />
+        </section>
+      </main>
+    </IconContext.Provider>
   )
 }
 
