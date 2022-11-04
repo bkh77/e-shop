@@ -1,16 +1,34 @@
 import NavBar from './components/NavBar.jsx'
 import SideBar from './components/SideBar/index.jsx'
+import { Routes, Route } from 'react-router-dom'
 import { IconContext } from 'react-icons'
+import Order from './pages/Order.jsx'
+import EmptyPage from './pages/EmptyPage.jsx'
+import { menus } from './components/SideBar/menus'
 
 function App() {
   return (
     <IconContext.Provider value={{ className: 'react-icons' }}>
-      <main className='font-body tracking-wide'>
+      <div className='font-body tracking-wide box-border'>
         <NavBar />
-        <section className='flex'>
+        <section className='flex flex-row'>
           <SideBar />
+          <main className='p-5 grow pr-10'>
+            <Routes>
+              {menus
+                .filter((menu) => menu.pathName !== '/order')
+                .map(({ pathName, title }) => (
+                  <Route
+                    key={title}
+                    path={pathName}
+                    element={<EmptyPage pageName={title} />}
+                  />
+                ))}
+              <Route path='/order' element={<Order />} />
+            </Routes>
+          </main>
         </section>
-      </main>
+      </div>
     </IconContext.Provider>
   )
 }
