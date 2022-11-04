@@ -8,9 +8,11 @@ module.exports = {
       },
     },
     colors: {
-      blue: '#3D639D',
       white: '#ffffff',
+      black: '#262728',
+      blue: '#3D639D',
       gray: '#BBC2D0',
+      'gray-light': '#F3F5F8',
       green: {
         DEFAULT: '#00C48C',
       },

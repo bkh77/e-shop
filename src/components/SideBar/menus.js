@@ -8,27 +8,27 @@ import {
 
 export const menus = [
   {
-    pathName: 'home',
+    pathName: '/',
     title: 'Главная',
     icon: <HomeIcon />,
   },
   {
-    pathName: 'order-list',
+    pathName: '/order-list',
     title: 'Заказы',
     icon: <OrderIcon />,
   },
   {
-    pathName: 'products',
+    pathName: '/products',
     title: 'Товары',
     icon: <BagIcon />,
   },
   {
-    pathName: 'reviews',
+    pathName: '/reviews',
     title: 'Отзывы',
     icon: <StarIcon />,
   },
   {
-    pathName: 'order',
+    pathName: '/order',
     title: 'Оформить заказ',
     icon: <CartIcon />,
   },

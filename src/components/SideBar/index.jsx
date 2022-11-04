@@ -1,23 +1,26 @@
 import { useState } from 'react'
 import { menus } from './menus'
+import { Link, useHref } from 'react-router-dom'
 
 function SideBar() {
-  const [activeMenu, setActiveMenu] = useState('home')
+  const href = useHref()
+  const [activeMenu, setActiveMenu] = useState(href)
   return (
-    <div className='w-[263px] h-screen bg-blue rounded-tr-[30px] text-white pl-8 py-8'>
+    <aside className='w-[263px] bg-blue rounded-tr-[30px] text-white pl-8 py-8'>
       {menus.map((menu) => (
-        <div
-          onClick={() => setActiveMenu(menu.pathName)}
-          key={menu.title}
-          className={`flex items-center space-x-4 py-4 pl-6 rounded-l-full cursor-pointer transition duration-150 ${
-            activeMenu === menu.pathName ? 'active' : null
-          }`}
-        >
-          <span>{menu.icon}</span>
-          <span>{menu.title}</span>
-        </div>
+        <Link to={menu.pathName} key={menu.title}>
+          <div
+            onClick={() => setActiveMenu(menu.pathName)}
+            className={`flex items-center space-x-4 py-4 pl-6 rounded-l-full cursor-pointer transition duration-150 ${
+              activeMenu === menu.pathName ? 'active' : null
+            }`}
+          >
+            <span>{menu.icon}</span>
+            <span>{menu.title}</span>
+          </div>
+        </Link>
       ))}
-    </div>
+    </aside>
   )
 }
 
