@@ -7,14 +7,14 @@ import {
 
 export const Card = ({ phone }) => {
   return (
-    <div className=' bg-white rounded-xl p-3 w-[192px] h-[268px]'>
+    <div className=' bg-white rounded-xl p-3 w-full h-full sm:w-[192px] sm:h-[268px]'>
       <div className='bg-gray-light rounded-lg h-[168px] relative'>
         <img
-          className='w-full h-full object-cover'
+          className='w-full h-full max-md:object-top object-cover'
           src={phone.imgUrl}
           alt={phone.name}
         />
-        <div className='absolute top-3 left-2 space-y-1'>
+        <div className='absolute  top-3 left-2 space-y-1'>
           {phone.isExchange && <ExchangeIcon />}
           {phone.isGift && <GiftIcon />}
           {phone.isDiscount && <DiscountIcon />}

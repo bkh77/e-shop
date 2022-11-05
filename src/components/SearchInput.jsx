@@ -9,7 +9,7 @@ function SearchInput() {
         type='text'
         placeholder='Поиск по названию товара'
       />
-      <button className='bg-green hover:bg-green/80  rounded-r-full py-3 px-10 text-white'>
+      <button className='bg-green hover:bg-green/80  rounded-r-full py-3 px-4 md:px-10 text-white'>
         <FiSearch className='w-6 h-6' />
       </button>
     </div>
