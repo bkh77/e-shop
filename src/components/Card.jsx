@@ -8,9 +8,9 @@ import {
 export const Card = ({ phone }) => {
   return (
     <div className=' bg-white rounded-xl p-3 w-full h-full sm:w-[192px] sm:h-[268px]'>
-      <div className='bg-gray-light rounded-lg h-[168px] relative'>
+      <div className='bg-gray-light rounded-lg h-[168px] relative overflow-hidden'>
         <img
-          className='w-full h-full max-md:object-top object-cover'
+          className='w-full h-full max-md:object-top object-cover '
           src={phone.imgUrl}
           alt={phone.name}
         />
