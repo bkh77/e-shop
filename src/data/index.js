@@ -11,9 +11,9 @@ export const data = [
     id: 1,
   },
   {
-    name: 'Samsung Galaxy A21s',
+    name: 'AirPods (2nd generation)',
     imgUrl:
-      'https://www.apple.com/v/airpods-2nd-generation/d/images/meta/og__bz8g5g9sbyoi_specs.png?202207050626',
+      'https://redstore.am/uploads/shop/products/main/51eea48347d11c5e0ee8bdfceea31521.jpg',
     totalPrice: 7_300_000,
     perMonthPrice: 2_435_000,
     perMonth: 12,
@@ -82,6 +82,29 @@ export const data = [
     id: 7,
   },
   {
+    name: 'AirPods (2nd generation)',
+    imgUrl:
+      'https://redstore.am/uploads/shop/products/main/51eea48347d11c5e0ee8bdfceea31521.jpg',
+    totalPrice: 7_300_000,
+    perMonthPrice: 2_435_000,
+    perMonth: 12,
+    isExchange: true,
+    isGift: false,
+    isDiscount: false,
+    id: 8,
+  },
+  {
+    name: 'Apple iPhone 12 (64GB)',
+    imgUrl: 'https://m.media-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg',
+    totalPrice: 7_300_000,
+    perMonthPrice: 2_435_000,
+    perMonth: 12,
+    isExchange: false,
+    isGift: true,
+    isDiscount: true,
+    id: 9,
+  },
+  {
     name: 'Samsung Galaxy A21s',
     imgUrl:
       'https://images.samsung.com/is/image/samsung/ie-galaxy-a21s-sm-a217fzkneua-front-254047571?$650_519_PNG$',
@@ -91,6 +114,6 @@ export const data = [
     isExchange: true,
     isGift: false,
     isDiscount: false,
-    id: 8,
+    id: 10,
   },
 ]

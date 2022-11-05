@@ -12,7 +12,7 @@ function SideBar() {
           <div
             onClick={() => setActiveMenu(menu.pathName)}
             className={`flex items-center space-x-4 py-4 pl-2 md:pl-6 rounded-l-full cursor-pointer transition duration-150 ${
-              activeMenu === menu.pathName ? 'active' : null
+              activeMenu === menu.pathName ? 'active' : ''
             }`}
           >
             <span>{menu.icon}</span>
