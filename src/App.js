@@ -13,7 +13,7 @@ function App() {
         <NavBar />
         <section className='flex flex-row'>
           <SideBar />
-          <main className='p-5 grow pr-10'>
+          <main className='p-5 grow pr-12'>
             <Routes>
               {menus
                 .filter((menu) => menu.pathName !== '/order')
