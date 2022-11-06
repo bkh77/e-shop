@@ -16,9 +16,9 @@ module.exports = {
       green: {
         DEFAULT: '#00C48C',
       },
-      pink:'#FF647C',
-      orange:'#FF6422'
+      pink: '#FF647C',
+      orange: '#FF6422',
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
