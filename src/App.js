@@ -5,6 +5,7 @@ import { IconContext } from 'react-icons'
 import Order from './pages/Order.jsx'
 import EmptyPage from './pages/EmptyPage.jsx'
 import { menus } from './components/SideBar/menus'
+import Details from './pages/Detailes.jsx'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                   />
                 ))}
               <Route path='/order' element={<Order />} />
+              <Route path='/order/:id' element={<Details />} />
             </Routes>
           </main>
         </section>

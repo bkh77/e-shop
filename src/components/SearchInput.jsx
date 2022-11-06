@@ -5,7 +5,7 @@ function SearchInput() {
   return (
     <div className='my-6 flex flex-row items-center'>
       <input
-        className='py-3 px-6 rounded-l-full grow outline-none'
+        className='py-3 px-6 rounded-l-full grow outline-none border-none'
         type='text'
         placeholder='Поиск по названию товара'
       />

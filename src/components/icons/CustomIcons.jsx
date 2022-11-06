@@ -24,3 +24,10 @@ export const DiscountIcon = () => {
     </div>
   )
 }
+export const DiscountIphoneIcon = () => {
+  return (
+    <div className='w-[36px] h-[28px] bg-[#AAD9AC] rounded flex justify-center items-center'>
+      <TbDiscount2 className='w-4 h-4 text-[#4CAF50]' />
+    </div>
+  )
+}
