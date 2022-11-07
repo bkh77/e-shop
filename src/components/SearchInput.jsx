@@ -1,9 +1,11 @@
 import { FiSearch } from 'react-icons/fi'
 
-function SearchInput() {
+function SearchInput({ search, change }) {
   return (
     <div className='my-6 flex flex-row items-center'>
       <input
+        value={search}
+        onChange={(e) => change(e.target.value)}
         className='grow rounded-l-full border-none py-3 px-6 outline-none'
         type='text'
         placeholder='Поиск по названию товара'
