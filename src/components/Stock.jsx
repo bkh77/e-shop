@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   ExchangeIcon,
   GiftIcon,
@@ -37,16 +36,16 @@ function Stock({ phone }) {
 
   return (
     <div className='mt-8'>
-      <p className='text-green font-bold '>Акции</p>
+      <p className='font-bold text-green '>Акции</p>
 
       {listStock.map(({ icon, title, amount, check, imei }) => (
         <div
           key={title}
-          className='flex justify-between mt-4 border-b-2 border-gray pb-3'
+          className='mt-4 flex justify-between border-b-2 border-gray pb-3'
         >
           <div className='flex space-x-4'>
             <div>{icon}</div>
-            <div className='text-black font-bold'>
+            <div className='font-bold text-black'>
               {title} <br />
               {imei && (
                 <>
@@ -59,9 +58,8 @@ function Stock({ phone }) {
           <span>
             <input
               type='checkbox'
-              readOnly
-              checked={check}
-              className='w-5 h-5 rounded border-none appearance-none outline-none ring-2 ring-gray text-white checked:bg-green checked:ring-green'
+              defaultChecked={check}
+              className='h-5 w-5 rounded border-none text-white outline-none ring-2 ring-gray checked:bg-green checked:ring-green'
             />
           </span>
         </div>

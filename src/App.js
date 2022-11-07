@@ -1,20 +1,20 @@
 import NavBar from './components/NavBar.jsx'
 import SideBar from './components/SideBar/index.jsx'
-import { Routes, Route } from 'react-router-dom'
-import { IconContext } from 'react-icons'
 import Order from './pages/Order.jsx'
 import EmptyPage from './pages/EmptyPage.jsx'
-import { menus } from './components/SideBar/menus'
 import Details from './pages/Detailes.jsx'
+import { Routes, Route } from 'react-router-dom'
+import { IconContext } from 'react-icons'
+import { menus } from './components/SideBar/menus'
 
 function App() {
   return (
     <IconContext.Provider value={{ className: 'react-icons' }}>
-      <div className='font-body tracking-wide box-border'>
+      <div className='box-border font-body tracking-wide'>
         <NavBar />
         <section className='flex flex-row'>
           <SideBar />
-          <main className='p-2 md:p-5 grow'>
+          <main className='grow p-2 md:p-5'>
             <Routes>
               {menus
                 .filter((menu) => menu.pathName !== '/order')

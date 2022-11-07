@@ -1,23 +1,24 @@
-import React from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { HiBell } from 'react-icons/hi'
 
 function NavBar() {
   return (
-    <header className='max-w-full bg-white h-[70px] flex'>
-      <div className='flex justify-between items-center grow'>
-        <div className='ml-6 md:ml-16 text-lg cursor-pointer font-bold'>LOGO</div>
+    <header className='flex h-[70px] max-w-full bg-white'>
+      <div className='flex grow items-center justify-between'>
+        <div className='ml-6 cursor-pointer text-lg font-bold md:ml-16'>
+          LOGO
+        </div>
         <div className='relative'>
-          <HiBell className='text-gray w-6 h-6 mr-10 cursor-pointer' />
-          <div className='w-4 h-4 bg-green rounded-full text-white flex justify-center items-center text-[10px] absolute -top-1 left-3'>
+          <HiBell className='mr-10 h-6 w-6 cursor-pointer text-gray' />
+          <div className='absolute -top-1 left-3 flex h-4 w-4 items-center justify-center rounded-full bg-green text-[10px] text-white'>
             1
           </div>
         </div>
       </div>
 
-      <div className='bg-blue h-[70px] md:w-[290px] w-20 rounded-bl-[30px] text-white flex justify-center items-center space-x-4'>
-        <span className='hidden md:block' >Личный кабинет</span>
-        <FaUserCircle className='w-8 h-8' />
+      <div className='flex h-[70px] w-20 items-center justify-center space-x-4 rounded-bl-[30px] bg-blue text-white md:w-[290px]'>
+        <span className='hidden md:block'>Личный кабинет</span>
+        <FaUserCircle className='h-8 w-8' />
       </div>
     </header>
   )

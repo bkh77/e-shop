@@ -6,7 +6,7 @@ export const BagIcon = () => {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className="w-6 h-6"
+      className='h-6 w-6'
     >
       <path
         strokeLinecap='round'
@@ -25,7 +25,7 @@ export const CartIcon = () => {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={'w-6 h-6'}
+      className={'h-6 w-6'}
     >
       <path
         strokeLinecap='round'
@@ -44,7 +44,7 @@ export function HomeIcon() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={'w-6 h-6'}
+      className={'h-6 w-6'}
     >
       <path
         strokeLinecap='round'
@@ -82,7 +82,7 @@ export const StarIcon = () => {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={'w-6 h-6'}
+      className={'h-6 w-6'}
     >
       <path
         strokeLinecap='round'

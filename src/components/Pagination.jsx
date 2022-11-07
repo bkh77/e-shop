@@ -4,7 +4,7 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md'
 function Pagination() {
   const [active, setActive] = useState(2)
   return (
-    <div className='flex justify-between items-center mt-5 max-sm:text-sm'>
+    <div className='mt-5 flex items-center justify-between max-sm:text-sm'>
       <button>
         <MdOutlineArrowForwardIos className='rotate-180' />
       </button>
@@ -13,7 +13,7 @@ function Pagination() {
           <button
             onClick={() => setActive(num)}
             key={num}
-            className={`w-9 h-9 rounded-xl font-bold ${
+            className={`h-9 w-9 rounded-xl font-bold ${
               active === num ? 'bg-green text-white' : ''
             }`}
           >
