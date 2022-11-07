@@ -50,7 +50,7 @@ function Details() {
 
         <div className='mt-6 flex flex-col lg:flex-row'>
           <div className='relative rounded-2xl bg-gray-light'>
-            <div className='w-[480px]'>
+            <div className='w-full md:w-[480px]'>
               <img
                 src={phone.imgUrl}
                 alt={phone.name}
@@ -83,7 +83,7 @@ function Details() {
 
             <p className='mt-10 text-gray'>Общая цена (с наценкой)</p>
 
-            <div className='flex items-center justify-between'>
+            <div className='flex flex-col md:flex-row items-center justify-between'>
               <p className='mt-2 font-bold text-black'>
                 {prettyCurrency(phone.totalPrice)}
               </p>
